@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-learning Project Landing Page</title>
-    <link ref="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <!-- header section -->
     <header>
-        <div class="skips-links">
-
+        <div id="skip-link-section" aria-label='Skip Link'>
+            <a href="#main-content"> Skip to Main Content</a>
         </div>
         <nav class="navbar" aria-label="main-navigation">
             <div class="navbar-logo">
@@ -24,7 +24,7 @@
 
         <div class="hero-section">
             <section class="hero-information" aria-label="About the e-learning project">
-                <h1>Maximize Skills, Minimize Budget</h1>
+                <h1 class="hero-title">Maximize Skills, Minimize Budget</h1>
                 <p class="hero-description" aria-label="e-learning project description">
                     Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.
                 </p>
@@ -36,7 +36,7 @@
     <!-- header section ends here -->
 
     <!-- main section -->
-    <main class="main-section">
+    <main class="main-section" id="main-content">
         <section aria-label="e-learning Courses">
             <ul class="cards-articles">
                 <li>
@@ -119,13 +119,6 @@
                 </li>
             </ul>
         </section>
-
-
-
-
-
-
-
     </main>
     <!-- main section ends here -->
 
@@ -133,6 +126,13 @@
         <div>
             <img src="assets/logo-light.svg" alt="Skilled logo-Footer">
         </div>
+
+        <button class="signup-btn" aria-label="Sign up to get started">
+            Get Started
+        </button>
+
+
+
 
     </footer>
 

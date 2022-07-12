@@ -1,10 +1,122 @@
+:root {
+    --button-background: #13183E;
+    --links-text-color: #ffffff;
+    --main-body-bgColor: #ffffff;
+    --headingColor: #03093b;
+    --mainFontColor: #0F122B;
+}
+
 *,
 ::before,
 ::after {
     box-sizing: border-box;
 }
 
-body {}
+body {
+    background-color: var(--main-body-bgColor)
+}
+
+
+/* visually hidding the skip link */
+
+#skip-link-section a {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    padding: 0.5rem;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0rem 0 1rem 0;
+    border-color: var(--button-background);
+    background-color: var(--button-background);
+    color: var(--links-text-color);
+}
+
+#skip-link-section a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    text-decoration: underline;
+}
+
+#skip-link-section a:link {
+    text-decoration: none;
+    color: var(--links-text-color);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+#navbar-signin-btn {
+    padding: 8px 30px;
+    font-size: 1rem;
+    background-color: var(--button-background);
+    border-color: var(--button-background);
+    color: var(--links-text-color);
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 5rem;
+}
+
+.navbar-logo {
+    margin-left: 3rem;
+}
+
+
+/* navigation section ends here */
+
+
+/* hero section */
+
+.hero-section {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    height: 100vh;
+}
+
+.hero-img {
+    background-image: url('assets/image-hero-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid green;
+    margin-top: -12rem;
+}
+
+.hero-information {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.hero-title {
+    font-size: 220%;
+    border: 2px solid red;
+    max-width: 50%;
+    margin-left: 2rem;
+    padding: 1rem;
+    color: var(--headingColor)
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--mainFontColor);
+    border: 2px solid red;
+}
+
+
+/* hero section ends here */
 
 
 /* small devices */
@@ -20,3 +132,5 @@ body {}
 /* tablets and medium laptops */
 
 @media screen and(min-width:800px) and (max-width:1020px) {}
+
+;
