@@ -1,0 +1,22 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {}
+
+
+/* small devices */
+
+@media screen and(min-width:200px) and (max-width:600px) {}
+
+
+/* small tablets and larger phones */
+
+@media screen and(min-width:600px) and (max-width:800px) {}
+
+
+/* tablets and medium laptops */
+
+@media screen and(min-width:800px) and (max-width:1020px) {}
