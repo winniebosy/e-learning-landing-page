@@ -76,7 +76,6 @@ body {
 /* hero section */
 
 .hero-section {
-    border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
@@ -89,7 +88,6 @@ body {
     background-repeat: no-repeat;
     max-width: 100%;
     height: auto;
-    border: 2px solid green;
     margin-top: -12rem;
 }
 
@@ -101,7 +99,6 @@ body {
 
 .hero-title {
     font-size: 220%;
-    border: 2px solid red;
     max-width: 50%;
     margin-left: 2rem;
     padding: 1rem;
@@ -110,27 +107,83 @@ body {
 
 .hero-description {
     font-size: 1.2rem;
-    line-height: 2;
+    line-height: 1.5;
     color: var(--mainFontColor);
-    border: 2px solid red;
+    margin-left: 2rem;
+    max-width: 60%;
+}
+
+.hero-btn {
+    margin-left: 2rem;
+}
+
+.hero-signup-btn {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-image: linear-gradient(#F46E4C, #F43794);
+    color: var(--links-text-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-width: 2px;
+    border-image: linear-gradient(#F46E4C, #F43794);
 }
 
 
 /* hero section ends here */
 
+.cards-articles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: auto auto;
+    grid-gap: 1rem;
+}
+
+article[class*="card"] {
+    border: 2px solid red;
+}
+
+.card-one {
+    padding: 3.3rem;
+}
+
 
 /* small devices */
 
-@media screen and(min-width:200px) and (max-width:600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .cards-articles {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-gap: 1rem;
+    }
+}
 
 
-/* small tablets and larger phones */
+/* Medium devices (landscape tablets, 768px and up) */
 
-@media screen and(min-width:600px) and (max-width:800px) {}
+@media only screen and (min-width: 768px) {
+    .cards-articles {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: 1rem;
+        padding: 1rem;
+    }
+}
 
 
-/* tablets and medium laptops */
+/* Large devices (laptops/desktops, 992px and up) */
 
-@media screen and(min-width:800px) and (max-width:1020px) {}
+@media only screen and (min-width: 992px) {
+    .cards-articles {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-gap: 1rem;
+    }
+}
 
-;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
