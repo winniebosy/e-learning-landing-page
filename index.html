@@ -12,27 +12,31 @@
 <body>
     <!-- header section -->
     <header>
-        <div id="skip-link-section" aria-label='Skip Link'>
+        <div id="skip-link-section">
             <a href="#main-content"> Skip to Main Content</a>
         </div>
         <nav class="navbar" aria-label="main-navigation">
             <div class="navbar-logo">
-                <img src="assets/logo-dark.svg" alt="Skilled Logo- Homepage">
+                <a href="#">
+                    <img src="assets/logo-dark.svg" role="img" alt="Skilled Logo-Homepage">
+                </a>
             </div>
             <button id="navbar-signin-btn" aria-label="Sign in to get started">Sign in</button>
         </nav>
 
         <div class="hero-section">
             <section class="hero-information" aria-label="About the e-learning project">
-                <h1 class="hero-title">Maximize Skills, Minimize Budget</h1>
-                <p class="hero-description" aria-label="e-learning project description">
-                    Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.
+                <h1 class="hero-title">
+                    Maximize Skills, Minimize Budget
+                </h1>
+                <p class="hero-description">
+                    <span class="description">e-learning project description</span> Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.
                 </p>
                 <div class="hero-btn">
                     <button class="hero-signup-btn" aria-label="Sign up to get started">Get Started</button>
                 </div>
             </section>
-            <div class="hero-img" role="img" alt=""></div>
+            <div class="hero-img" role="presentation" alt=""></div>
         </div>
     </header>
     <!-- header section ends here -->
@@ -41,71 +45,98 @@
     <main class="main-section" id="main-content">
         <section class="cards-section" aria-label="e-learning Courses">
             <ul class="cards-articles">
-                <li>
+                <!-- card one -->
+                <li tabindex="0">
                     <article class="card-one">
                         <h2>
                             Check out our most popular courses.
                         </h2>
                     </article>
                 </li>
-                <li>
-                    <article class="card-two" aria-label="Card-two">
-                        <img class="article-img" src="assets/icon-animation.svg" alt="">
-                        <div class="card-info">
-                            <h2 aria-label="Course Title">
-                                Animation
+                <!-- card one ends here -->
+                <!-- card tow -->
+                <li tabindex="0">
+                    <article class="card-two " aria-label="Card One">
+                        <img class="article-img " src="assets/icon-animation.svg " alt="">
+                        <div class="card-info ">
+                            <h2>
+                                <span class="description ">Course title</span> Animation
                             </h2>
-                            <p class="article-information" aria-label="Course Information">
-                                Learn the latest animation techniques to create stunning motion design and captivate your audience.
+                            <p class="article-information ">
+                                <span class="description ">Course Description</span> Learn the latest animation techniques to create stunning motion design and captivate your audience.
                             </p>
-                            <button class="signup-btn" aria-label="Sign up to get started">
+                            <button class="signup-btn " aria-label="Sign up to get started">
                             Get Started
                         </button>
                         </div>
                     </article>
                 </li>
-                <li>
-                    <article class="card-two" aria-label="Card-three">
-                        <img class="article-img" src="assets/icon-design.svg" alt="">
-                        <div class="card-info">
-                            <h2 aria-label="Course Title">
-                                Design
-                            </h2>
-                            <p class="article-information" aria-label="Course Information">
-                                Create beautiful and usable user interfaces and designs to help shape the future of how the web looks.
-                            </p>
-                            <button class="signup-btn" aria-label="Sign up to get started">
-                            Get Started
-                        </button>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="card-two" aria-label="Card-four">
-                        <img class="article-img" src="assets/icon-photography.svg" alt="">
-                        <div class="card-info">
-                            <h2 aria-label="Course Title">
-                                Photography
-                            </h2>
-                            <p class="article-information" aria-label="Course Information">
-                                Explore critical fundamentals like lightning composition and focus to capture exceptional focus
-                            </p>
-                            <button class="signup-btn" aria-label="Sign up to get started">
-                            Get Started
-                        </button>
-                        </div>
-                    </article>
-                </li>
+                <!-- card two ends here -->
+                <!-- card three -->
+                <li tabindex="0 ">
+                    <article class="card-two " aria-label="Card Two">
+                        <img class="article-img " src="assets/icon-design.svg " alt="">
+                        <div class="card-info ">
+                            <h2>
 
-                <li>
-                    <article class="card-two" aria-label="Card-five">
-                        <img class="article-img" src="assets/icon-crypto.svg" alt="">
-                        <div class="card-info">
-                            <h2 aria-label="Course Title">
-                                Crypto
+                                <span class="description ">Course title</span>Design
                             </h2>
-                            <p class="article-information" aria-label="Course Information">
-                                All you need to know to get started investing in crypto. Go from beginner to advanced in this 54 hour course.
+                            <p class="article-information ">
+                                <span class="description ">Course Description</span> Create beautiful and usable user interfaces and designs to help shape the future of how the web looks.
+                            </p>
+                            <button class="signup-btn " aria-label="Sign up to get started">
+                            Get Started
+                        </button>
+                        </div>
+                    </article>
+                </li>
+                <!-- card three -->
+                <!-- card four -->
+                <li tabindex="0 ">
+                    <article class="card-two " aria-label="Card Three ">
+                        <img class="article-img " src="assets/icon-photography.svg " alt="">
+                        <div class="card-info ">
+                            <h2>
+                                <span class="description">Course title</span>Photography
+                            </h2>
+                            <p class="article-information ">
+                                <span class="description ">Course Description</span> Explore critical fundamentals like lightning composition and focus to capture exceptional focus
+                            </p>
+                            <button class="signup-btn " aria-label="Sign up to get started">
+                            Get Started
+                        </button>
+                        </div>
+                    </article>
+                </li>
+                <!-- card four -->
+
+                <li tabindex="0 ">
+                    <article class="card-two " aria-label="Card Four ">
+                        <img class="article-img " src="assets/icon-crypto.svg " alt="">
+                        <div class="card-info ">
+                            <h2>
+                                <span class="description ">Course title</span>Crypto
+                            </h2>
+                            <p class="article-information ">
+                                <span class="description ">Course Description</span> All you need to know to get started investing in crypto. Go from beginner to advanced in this 54 hour course.
+                            </p>
+                            <button class="signup-btn " aria-label="Sign up to get started">
+                            Get Started
+                        </button>
+                        </div>
+                    </article>
+                </li>
+                <!-- card four ends here -->
+                <!-- card five -->
+                <li tabindex="0 ">
+                    <article class="card-two " aria-label="Card Five">
+                        <img src="assets/icon-business.svg " class="article-img " alt="">
+                        <div class="card-info ">
+                            <h2>
+                                <span class="description ">Course title</span>Business
+                            </h2>
+                            <p class="article-information">
+                                <span class="description ">Course Description</span> A step-by-step playbook to help you that scale, and sustain your business without outside investment.
                             </p>
                             <button class="signup-btn" aria-label="Sign up to get started">
                             Get Started
@@ -113,22 +144,7 @@
                         </div>
                     </article>
                 </li>
-                <li>
-                    <article class="card-two" aria-label="Card-six">
-                        <img src="assets/icon-business.svg" class="article-img" alt="">
-                        <div class="card-info">
-                            <h2 aria-label="Course Title">
-                                Business
-                            </h2>
-                            <p class="article-information" aria-label="Course Information">
-                                A step-by-step playbook to help you that scale, and sustain your business without outside investment.
-                            </p>
-                            <button class="signup-btn" aria-label="Sign up to get started">
-                            Get Started
-                        </button>
-                        </div>
-                    </article>
-                </li>
+                <!-- card five ends here -->
             </ul>
         </section>
     </main>
@@ -136,10 +152,13 @@
 
     <footer>
         <div>
-            <img src="assets/logo-light.svg" alt="Skilled logo-Footer">
+            <a href="#">
+
+                <img role="img" src="assets/logo-light.svg" alt="Skilled logo-Footer">
+            </a>
         </div>
 
-        <button class="signup-btn-footer" aria-label="Sign up to get started">
+        <button class="signup-btn-footer " aria-label="Sign up to get started ">
             Get Started
         </button>
 
