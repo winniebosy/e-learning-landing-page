@@ -124,7 +124,7 @@ header {
 .hero-signup-btn {
     padding: 10px 30px;
     border-radius: 20px;
-   background-image: linear-gradient(#F46E4C, #F43794);
+    background-image: linear-gradient(#E74116, #B12168)
     color: var(--links-text-color);
     font-size: 0.9rem;
     font-weight: bold;
